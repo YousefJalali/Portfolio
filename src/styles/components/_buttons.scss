@@ -1,0 +1,22 @@
+.button {
+    padding: 15px 40px;
+    border: 2px solid #fff;
+    box-sizing: inherit;
+    display: inline-block;
+    transition: all .5s;
+    cursor: pointer;
+
+    .icon {
+        margin-left: 1rem;
+        transition: all .5s;
+    }
+
+    &:hover {
+        background-color: $colorSecondary;
+        color: $colorTertiary;
+        border: 2px solid $colorSecondary;
+        .icon {
+            transform: rotate(90deg)
+        }
+    }
+}

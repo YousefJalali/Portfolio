@@ -1,0 +1,21 @@
+$colorPrimary: #222831;
+$colorPrimaryLight: #393e46;
+$colorSecondary: #00adb5;
+$colorSecondaryDark: #00868c;
+$colorTertiary: #eee;
+$colorTertiaryDark: #dedede;
+.primary {
+    color: $colorPrimary
+}
+
+.primaryLight {
+    color: $colorPrimaryLight
+}
+
+.secondary {
+    color: $colorSecondary
+}
+
+.tertiary {
+    color: $colorTertiary
+}

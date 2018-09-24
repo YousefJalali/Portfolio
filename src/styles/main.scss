@@ -1,0 +1,17 @@
+@import './base/color';
+@import './base/breakPoints';
+@import './base/typography';
+@import './components/buttons';
+@import './components/octagon';
+@import './components/loadingBar';
+@import './components/underLine';
+@import './layout/section';
+@import './layout/flex';
+@import './pages/home';
+@import './pages/about';
+.App {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #eee;
+}

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway:300,400,700,900');
+
+.bolder {
+    font-weight: 900;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.lighter {
+    font-weight: 300;
+}
+
+.normal {
+    font-weight: 400;
+}
+
+.header {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem; // text-transform: uppercase;
+    @extend .bold;
+}
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.2rem;
+    @extend .bold;
+    margin: 15px 0;
+}
+
+.sub-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    @extend .bold;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.button {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+}
+
+@include respond-to('extraSmall') {
+    html {
+        font-size: 6px;
+
+        .button {
+            font-size: 3rem;
+        }
+    }
+}
+
+@include respond-to('small') {
+    html {
+        font-size: 7px;
+
+        .button {
+            font-size: 3rem;
+        }
+    }
+}
+
+@include respond-to('medium') {
+    html {
+        font-size: 8px;
+
+        .button {
+            font-size: 3rem;
+        }
+    }
+}
+
+@include respond-to('large') {
+    html {
+        font-size: 9px;
+
+        .button {
+            font-size: 2rem;
+        }
+    }
+}
+
+@include respond-to('extraLarge') {
+    html {
+        font-size: 10px;
+
+        .button {
+            font-size: 2rem;
+        }
+    }
+}

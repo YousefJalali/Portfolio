@@ -1,0 +1,35 @@
+.loading-bar {
+    height: 30px;
+    width: 100%;
+    background-color: $colorTertiaryDark;
+    position: relative;
+    font-size: 1.6rem;
+    &:not(:last-child) {
+        margin-bottom: 15px
+    }
+    .label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 30px;
+        background-color: $colorSecondaryDark;
+        color: $colorTertiary;
+        width: 25%;
+        text-transform: capitalize;
+    }
+    .percent {
+        position: absolute;
+        top: 0;
+        left: 25%;
+        height: 30px;
+        background-color: $colorSecondary;
+        width: 75%;
+    }
+    .percent-number {
+        position: absolute;
+        top: 0;
+        left: 88%;
+        height: 30px;
+        width: 10%;
+    }
+}

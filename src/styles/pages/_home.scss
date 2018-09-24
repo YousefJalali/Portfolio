@@ -1,0 +1,7 @@
+.home {
+    height: 100vh;
+    background-image: linear-gradient($colorPrimary, rgba($colorPrimary, .9)), url('../assets/abstract-business-code-276452.jpg');
+    background-position: center;
+    background-size: cover;
+    color: $colorTertiary;
+}

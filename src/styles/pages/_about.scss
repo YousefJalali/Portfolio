@@ -1,0 +1,163 @@
+.about {
+    // height: 150vh;
+    background-color: $colorTertiary;
+    color: $colorPrimaryLight;
+    padding: 2vh;
+    width: 90vw;
+    margin: 0 5vw;
+    transition: all .5s ease-out;
+    .card {
+        // height: 30vh;
+        width: 50%;
+        font-size: 2rem;
+        .square {
+            height: 100px;
+            width: 100px;
+        }
+    }
+    .profile {
+        // height: 50vh;
+        width: 45%;
+        margin-bottom: 10vh;
+        .octagon {
+            height: 250px;
+            width: 250px;
+        }
+    }
+    .skills {
+        // height: 50vh;
+        width: 45%;
+        margin-bottom: 10vh;
+    }
+}
+
+//breakPoints
+@include respond-to('extraSmall') {
+    .about {
+        width: 96vw;
+        margin: 0 2vw;
+        .card {
+            width: 50%;
+            font-size: 2rem;
+            .square {
+                height: 100px;
+                width: 100px;
+            }
+        }
+        .profile {
+            width: 90%;
+            .octagon {
+                height: 250px;
+                width: 250px;
+            }
+        }
+        .skills {
+            width: 90%;
+        }
+        
+        .content-space-between {
+            justify-content: center;
+        }
+    }
+}
+
+@include respond-to('small') {
+    .about {
+        .card {
+            width: 50%;
+            font-size: 2rem;
+            .square {
+                height: 100px;
+                width: 100px;
+            }
+        }
+        .profile {
+            width: 90%;
+            .octagon {
+                height: 250px;
+                width: 250px;
+            }
+        }
+        .skills {
+            width: 90%;
+        }
+
+        .content-space-between {
+            justify-content: center;
+        }
+    }
+}
+
+@include respond-to('medium') {
+    .about {
+        .row {
+            flex-wrap: nowrap;
+        }
+        .card {
+            width: 50%;
+            font-size: 2rem;
+            .square {
+                height: 100px;
+                width: 100px;
+            }
+        }
+        .profile {
+            width: 45%;
+            .octagon {
+                height: 250px;
+                width: 250px;
+            }
+        }
+        .skills {
+            width: 45%;
+        }
+
+        .content-space-between {
+            justify-content: space-between;
+        }
+    }
+}
+
+@include respond-to('large') {
+    .about {
+        .row {
+            flex-wrap: nowrap;
+        }
+        .card {
+            width: 50%;
+            font-size: 2rem;
+            .square {
+                height: 100px;
+                width: 100px;
+            }
+        }
+        .profile {
+            .octagon {
+                height: 250px;
+                width: 250px;
+            }
+        }
+    }
+}
+
+@include respond-to('extraLarge') {
+    .about {
+        .row {
+            flex-wrap: nowrap;
+        }
+        .card {
+            width: 50%;
+            font-size: 2rem;
+            .square {
+                height: 100px;
+                width: 100px;
+            }
+        }
+        .profile {
+            .octagon {
+                height: 250px;
+                width: 250px;
+            }
+        }
+    }
+}
