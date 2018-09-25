@@ -1,7 +1,14 @@
 .home {
-    height: 100vh;
-    background-image: linear-gradient($colorPrimary, rgba($colorPrimary, .9)), url('../assets/abstract-business-code-276452.jpg');
-    background-position: center;
-    background-size: cover;
-    color: $colorTertiary;
+  height: 100vh;
+  background-image: linear-gradient(
+      To Top,
+      rgba($colorPrimary, 1),
+      rgba($colorPrimary, 0.8)
+    ),
+    url("../assets/background.png");
+  // background-image: url('../assets/background.png');
+  background-color: $colorPrimary;
+  background-position: right;
+  background-size: cover;
+  color: $colorTertiary;
 }

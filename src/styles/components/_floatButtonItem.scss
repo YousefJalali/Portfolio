@@ -1,0 +1,26 @@
+$size: 50px;
+
+.float-button-item {
+  position: relative;
+
+  .description {
+    position: absolute;
+    height: $size - 10;
+    right: $size - 10px;
+    top: 0;
+    background-color: $colorTertiary;
+    border-bottom-left-radius: $size * 2;
+    border-top-left-radius: $size * 2;
+    z-index: 20;
+    transition: width 0.5s ease-out;
+    padding: 0;
+    color: $colorPrimary;
+  }
+
+  .open {
+    width: $size * 3;
+  }
+  .closed {
+    width: 0;
+  }
+}

@@ -32,7 +32,7 @@
 .sub-title {
     font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
-    @extend .bold;
+    @extend .normal;
 }
 
 .text {
@@ -41,7 +41,7 @@
     margin: 0;
 }
 
-.button {
+.button--text {
     font-family: 'Raleway', sans-serif;
     font-size: 2rem;
 }

@@ -1,0 +1,52 @@
+$size: 50px;
+$half: $size / 2;
+
+.float-button {
+  height: $size;
+  width: $size;
+  position: fixed;
+  top: 5%;
+  right: 3%;
+  z-index: 10;
+  // border-radius: $size * 2;
+  // box-shadow: 0 0 20px 1px $colorPrimary;
+  cursor: pointer;
+
+  .top-half {
+    height: $half;
+    width: $size;
+    background-color: $colorTertiary;
+    border-top-left-radius: $size * 2;
+    border-top-right-radius: $size * 2;
+  }
+
+  .bottom-half {
+    height: $half;
+    width: $size;
+    background-color: $colorTertiary;
+    border-bottom-left-radius: $size * 2;
+    border-bottom-right-radius: $size * 2;
+  }
+
+  .float-button-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20px, -20px);
+  }
+
+  .menu {
+    width: $size;
+    background-color: $colorTertiary;
+    transition: all .5s ease-out;
+    cursor: pointer;
+  }
+  .closed {
+    height: 0;
+    overflow: hidden;
+  }
+  .open {
+    height: 200px;
+    padding-top: 3rem;
+  }
+}
