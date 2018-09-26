@@ -8,9 +8,9 @@ class FloatButton extends Component {
   state = {
     isMenuClicked: false,
     menu: [
-      { label: "home", icon: "ICONS.home" },
-      { label: "work", icon: "ICONS.work" },
       { label: "skills", icon: "ICONS.skills" },
+      { label: "work", icon: "ICONS.work" },
+      { label: "experiments", icon: "ICONS.experiments" },
       { label: "contact", icon: "ICONS.contact" }
     ]
   };
@@ -34,8 +34,8 @@ class FloatButton extends Component {
     const items = this.state.menu.map(item => {
       let itemIcon;
       switch (item.label) {
-        case "home":
-          itemIcon = ICONS.home;
+        case "experiments":
+          itemIcon = ICONS.experiments;
           break;
         case "work":
           itemIcon = ICONS.work;

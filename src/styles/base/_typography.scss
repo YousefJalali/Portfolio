@@ -1,97 +1,115 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway:300,400,700,900');
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Raleway:300,400,700,900");
 
 .bolder {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 .bold {
-    font-weight: 700;
-}
-
-.lighter {
-    font-weight: 300;
+  font-weight: 700;
 }
 
 .normal {
-    font-weight: 400;
+  font-weight: 400;
 }
 
+.lighter {
+  font-weight: 300;
+}
+
+.big {
+  font-size: 2rem !important;
+}
+
+
 .header {
-    font-family: 'Raleway', sans-serif;
-    font-size: 4rem; // text-transform: uppercase;
-    @extend .bold;
+  font-family: "Raleway", sans-serif;
+  font-size: 4rem;
+  @extend .bold;
+}
+
+.header--extra {
+  font-family: "Raleway", sans-serif;
+  font-size: 8rem;
+  margin-bottom: 1rem;
+  @extend .bolder;
 }
 
 .title {
-    font-family: 'Raleway', sans-serif;
-    font-size: 2.2rem;
-    @extend .bold;
-    margin: 15px 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.2rem;
+  @extend .bold;
+  margin: 1.5rem 0;
 }
 
 .sub-title {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.5rem;
-    @extend .normal;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  @extend .normal;
 }
 
 .text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.6rem;
-    margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  @extend .lighter;
 }
 
 .button--text {
-    font-family: 'Raleway', sans-serif;
-    font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
 }
 
-@include respond-to('extraSmall') {
-    html {
-        font-size: 6px;
+@include respond-to("extraSmall") {
+  html {
+    font-size: 6px;
 
-        .button {
-            font-size: 3rem;
-        }
+    .button--text {
+      font-size: 3rem;
     }
+  }
 }
 
-@include respond-to('small') {
-    html {
-        font-size: 7px;
+@include respond-to("small") {
+  html {
+    font-size: 7px;
 
-        .button {
-            font-size: 3rem;
-        }
+    .button--text {
+      font-size: 3rem;
     }
+  }
 }
 
-@include respond-to('medium') {
-    html {
-        font-size: 8px;
+@include respond-to("medium") {
+  html {
+    font-size: 8px;
 
-        .button {
-            font-size: 3rem;
-        }
+    .button--text {
+      font-size: 3rem;
     }
+  }
 }
 
-@include respond-to('large') {
-    html {
-        font-size: 9px;
+@include respond-to("large") {
+  html {
+    font-size: 9px;
 
-        .button {
-            font-size: 2rem;
-        }
+    .button--text {
+      font-size: 2rem;
     }
+  }
 }
 
-@include respond-to('extraLarge') {
-    html {
-        font-size: 10px;
+@include respond-to("extraLarge") {
+  html {
+    font-size: 10px;
 
-        .button {
-            font-size: 2rem;
-        }
+    .button--text {
+      font-size: 2rem;
     }
+  }
 }

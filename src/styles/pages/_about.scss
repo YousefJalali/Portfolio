@@ -1,163 +1,112 @@
 .about {
-    // height: 150vh;
-    background-color: $colorTertiary;
-    color: $colorPrimaryLight;
-    padding: 2vh;
-    width: 90vw;
-    margin: 0 5vw;
-    transition: all .5s ease-out;
-    .card {
-        // height: 30vh;
-        width: 50%;
-        font-size: 2rem;
-        .square {
-            height: 100px;
-            width: 100px;
-        }
+  background-color: $colorTertiary;
+  color: $colorPrimaryLight;
+  padding: 2rem 5rem;
+  width: 100vw;
+  max-width: 1500px;
+  transition: all 0.5s ease-out;
+
+  .performance--container {
+    margin-bottom: 10rem;
+    .performance {
+      width: 50%;
+      font-size: 2rem;
+      .square {
+        height: 10rem;
+        width: 10rem;
+      }
     }
-    .profile {
-        // height: 50vh;
-        width: 45%;
-        margin-bottom: 10vh;
-        .octagon {
-            height: 250px;
-            width: 250px;
-        }
+  }
+
+  .profile {
+    width: 45%;
+    margin-bottom: 5rem;
+    .octagon {
+      height: 25rem;
+      width: 25rem;
     }
-    .skills {
-        // height: 50vh;
-        width: 45%;
-        margin-bottom: 10vh;
-    }
+  }
+  .skills {
+    width: 45%;
+    margin-bottom: 5rem;
+  }
 }
 
 //breakPoints
-@include respond-to('extraSmall') {
-    .about {
-        width: 96vw;
-        margin: 0 2vw;
-        .card {
-            width: 50%;
-            font-size: 2rem;
-            .square {
-                height: 100px;
-                width: 100px;
-            }
-        }
-        .profile {
-            width: 90%;
-            .octagon {
-                height: 250px;
-                width: 250px;
-            }
-        }
-        .skills {
-            width: 90%;
-        }
-        
-        .content-space-between {
-            justify-content: center;
-        }
+@include respond-to("extraSmall") {
+  .about {
+    .performance--container > div {
+      width: 90vw;
+      margin-bottom: 5rem;
     }
+
+    .profile {
+      width: 90%;
+    }
+    .skills {
+      width: 90%;
+    }
+
+    .content-space-between {
+      justify-content: center;
+    }
+  }
 }
 
-@include respond-to('small') {
-    .about {
-        .card {
-            width: 50%;
-            font-size: 2rem;
-            .square {
-                height: 100px;
-                width: 100px;
-            }
-        }
-        .profile {
-            width: 90%;
-            .octagon {
-                height: 250px;
-                width: 250px;
-            }
-        }
-        .skills {
-            width: 90%;
-        }
-
-        .content-space-between {
-            justify-content: center;
-        }
+@include respond-to("small") {
+  .about {
+    .performance--container > div {
+      width: 90vw;
+      margin-bottom: 5rem;
     }
+
+    .profile {
+      width: 90%;
+    }
+    .skills {
+      width: 90%;
+    }
+
+    .content-space-between {
+      justify-content: center;
+    }
+  }
 }
 
-@include respond-to('medium') {
-    .about {
-        .row {
-            flex-wrap: nowrap;
-        }
-        .card {
-            width: 50%;
-            font-size: 2rem;
-            .square {
-                height: 100px;
-                width: 100px;
-            }
-        }
-        .profile {
-            width: 45%;
-            .octagon {
-                height: 250px;
-                width: 250px;
-            }
-        }
-        .skills {
-            width: 45%;
-        }
-
-        .content-space-between {
-            justify-content: space-between;
-        }
+@include respond-to("medium") {
+  .about {
+    .performance--container > div {
+      width: 50%;
+      margin-bottom: 0;
     }
+
+    // .content-space-between {
+    //   justify-content: center;
+    // }
+  }
 }
 
-@include respond-to('large') {
-    .about {
-        .row {
-            flex-wrap: nowrap;
-        }
-        .card {
-            width: 50%;
-            font-size: 2rem;
-            .square {
-                height: 100px;
-                width: 100px;
-            }
-        }
-        .profile {
-            .octagon {
-                height: 250px;
-                width: 250px;
-            }
-        }
+@include respond-to("large") {
+  .about {
+    .profile {
+      width: 45%;
     }
+    .skills {
+      width: 45%;
+    }
+    .row {
+      flex-wrap: nowrap;
+    }
+    .content-space-between {
+      justify-content: space-between;
+    }
+  }
 }
 
-@include respond-to('extraLarge') {
-    .about {
-        .row {
-            flex-wrap: nowrap;
-        }
-        .card {
-            width: 50%;
-            font-size: 2rem;
-            .square {
-                height: 100px;
-                width: 100px;
-            }
-        }
-        .profile {
-            .octagon {
-                height: 250px;
-                width: 250px;
-            }
-        }
+@include respond-to("extraLarge") {
+  .about {
+    .row {
+      flex-wrap: nowrap;
     }
+  }
 }

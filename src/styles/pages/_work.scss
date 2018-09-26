@@ -1,0 +1,13 @@
+.work {
+  height: 100vh;
+  background-color: $colorTertiary;
+  color: $colorPrimaryLight;
+  padding: 2vh;
+  width: 90vw;
+  max-width: 1500px;
+  margin: 0 5vw;
+
+  .card--container {
+    width: 100%
+  }
+}

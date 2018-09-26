@@ -1,0 +1,79 @@
+.card {
+  height: 30rem;
+  width: 30rem;
+  border: 1px solid $colorTertiaryDark;
+  border-radius: 5px;
+  text-align: left;
+  margin-bottom: 3rem;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    box-shadow: 0 0 20px 5px $colorTertiaryDark;
+  }
+
+  .card--image {
+    height: 60%;
+    img {
+      height: 100%;
+      width: 100%;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+  }
+
+  .card--title {
+    padding: 0 1rem;
+  }
+
+  .card--link {
+    padding: 0.5rem;
+    margin: 1.5rem 1rem;
+    text-transform: capitalize;
+    border: 1px solid $colorPrimaryLight;
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+    color: $colorPrimary;
+    text-decoration: none;
+    transition: all .3s ease-out;
+
+    &:hover {
+      background-color: $colorTertiaryDark;
+    }
+  }
+}
+
+@include respond-to("extraSmall") {
+  .card {
+    height: 90%;
+    width: 90%;
+  }
+}
+
+@include respond-to("small") {
+  .card {
+    height: 90%;
+    width: 90%;
+  }
+}
+
+@include respond-to("medium") {
+  .card {
+    height: 90%;
+    width: 90%;
+  }
+}
+
+@include respond-to("large") {
+  .card {
+    height: 30%;
+    width: 30%;
+  }
+}
+
+@include respond-to("extraLarge") {
+  .card {
+    height: 30%;
+    width: 30%;
+  }
+}

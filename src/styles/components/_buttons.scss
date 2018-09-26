@@ -1,22 +1,27 @@
 .button {
-    padding: 15px 40px;
-    border: 2px solid #fff;
-    box-sizing: inherit;
-    display: inline-block;
-    transition: all .5s;
-    cursor: pointer;
+  padding: 1.5rem 4rem;
+  background-color: $colorSecondary;
+  color: $colorTertiary;
+  box-sizing: inherit;
+  display: inline-block;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 3rem 0;
 
+  .icon {
+    margin-left: 1rem;
+    transition: all 0.5s;
+  }
+
+  &:hover {
+    box-shadow: 0 3px 5px 1px gray;
+    transform: translateY(-5px);
     .icon {
-        margin-left: 1rem;
-        transition: all .5s;
+      transform: rotate(90deg);
     }
-
-    &:hover {
-        background-color: $colorSecondary;
-        color: $colorTertiary;
-        border: 2px solid $colorSecondary;
-        .icon {
-            transform: rotate(90deg)
-        }
-    }
+  }
+  &:active {
+    box-shadow: 0 1px 3px 1px gray;
+    transform: translateY(-2px);
+  }
 }

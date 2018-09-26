@@ -1,14 +1,11 @@
 .home {
   height: 100vh;
-  background-image: linear-gradient(
-      To Top,
-      rgba($colorPrimary, 1),
-      rgba($colorPrimary, 0.8)
-    ),
-    url("../assets/background.png");
-  // background-image: url('../assets/background.png');
+  background-image: url('../assets/background.png');
   background-color: $colorPrimary;
-  background-position: right;
+  background-position: center;
   background-size: cover;
-  color: $colorTertiary;
+  background-attachment: fixed;
+  color: $colorPrimary;
+  text-align: left;
+  padding-left: 3rem
 }
