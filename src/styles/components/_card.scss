@@ -25,20 +25,32 @@
     padding: 0 1rem;
   }
 
-  .card--link {
-    padding: 0.5rem;
+  .card--link-container {
     margin: 1.5rem 1rem;
-    text-transform: capitalize;
-    border: 1px solid $colorPrimaryLight;
-    border-radius: 5px;
-    width: fit-content;
-    height: fit-content;
-    color: $colorPrimary;
-    text-decoration: none;
-    transition: all .3s ease-out;
 
-    &:hover {
-      background-color: $colorTertiaryDark;
+    .card--link {
+      padding: 0.2rem 0.5rem;
+      text-transform: capitalize;
+      border: 1px solid $colorTertiaryDark;
+      border-radius: 5px;
+      width: fit-content;
+      height: fit-content;
+      color: $colorPrimary;
+      text-decoration: none;
+      transition: all 0.3s ease-out;
+
+      &:hover {
+        background-color: $colorTertiaryDark;
+      }
+    }
+    .card--linkImg {
+      height: 3.2rem;
+      overflow: hidden;
+      margin-right: 1rem;
+      img {
+        height: auto;
+        width: 10rem;
+      }
     }
   }
 }

@@ -1,0 +1,22 @@
+.contact {
+  background-color: $colorPrimary;
+  color: $colorTertiary;
+  width: 100vw;
+  max-width: 100vw;
+
+  & > :first-child :last-child {
+    background-color: $colorTertiary;
+  }
+
+  h2 {
+    color: $colorPrimaryLight;
+    font-size: 3rem;
+  }
+
+  & > :last-child {
+    color: $colorPrimaryLight;
+    span {
+      color: rgba($colorSecondaryDark, 0.6);
+    }
+  }
+}

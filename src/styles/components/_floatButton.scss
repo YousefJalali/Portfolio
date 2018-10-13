@@ -1,4 +1,4 @@
-$size: 50px;
+$size: 45px;
 $half: $size / 2;
 
 .float-button {
@@ -8,9 +8,10 @@ $half: $size / 2;
   top: 5%;
   right: 3%;
   z-index: 10;
-  // border-radius: $size * 2;
-  // box-shadow: 0 0 20px 1px $colorPrimary;
-  cursor: pointer;
+
+  & > div {
+    position: relative;
+  }
 
   .top-half {
     height: $half;
@@ -18,6 +19,7 @@ $half: $size / 2;
     background-color: $colorTertiary;
     border-top-left-radius: $size * 2;
     border-top-right-radius: $size * 2;
+    cursor: pointer;
   }
 
   .bottom-half {
@@ -26,27 +28,55 @@ $half: $size / 2;
     background-color: $colorTertiary;
     border-bottom-left-radius: $size * 2;
     border-bottom-right-radius: $size * 2;
+    cursor: pointer;
   }
 
   .float-button-icon {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-20px, -20px);
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    cursor: pointer;
+
+    .float-button--bar {
+      height: 3px;
+      width: 25px;
+      background-color: $colorPrimary;
+      border-radius: 50px;
+      transition: all .5s ease-out;
+
+      &:not(:last-child) {
+        margin-bottom: 4px;
+      }
+    }
+
+    .top-bar-transform {
+      transform: translateY(7px) rotate(45deg);
+    }
+    .middle-bar-transform {
+      display: none;
+    }
+    .bottom-bar-transform {
+      transform: rotate(135deg);
+    }
   }
 
   .menu {
     width: $size;
     background-color: $colorTertiary;
-    transition: all .5s ease-out;
-    cursor: pointer;
+    transition: all 0.5s ease-out;
   }
   .closed {
     height: 0;
-    overflow: hidden;
   }
   .open {
     height: 200px;
     padding-top: 3rem;
+  }
+  .menuOpenOverflow {
+    overflow: visible;
+  }
+  .menuClosedOverflow {
+    overflow: hidden;
   }
 }

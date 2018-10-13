@@ -1,0 +1,73 @@
+.experiments {
+  background-color: $colorTertiary;
+  color: $colorPrimaryLight;
+
+  h2 {
+    color: $colorTertiaryDark;
+    font-size: 5rem;
+  }
+
+  .experiments-container {
+    width: 100%;
+    height: 40vh;
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: start;
+
+    & > * {
+      width: 100%;
+      height: 0;
+      padding-top: 100%;
+      position: relative;
+
+      & > :first-child {
+        position: absolute;
+        top: 10%;
+        left: 20%;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+@include respond-to("extraSmall") {
+  .experiments {
+    .experiments-container {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@include respond-to("small") {
+  .experiments {
+    .experiments-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@include respond-to("medium") {
+  .experiments {
+    .experiments-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@include respond-to("large") {
+  .experiments {
+    .experiments-container {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+}
+
+// @include respond-to("extraLarge") {
+//   .experiments {
+//     .experiments-container {
+//       grid-template-columns: 1fr 1fr 1fr 1fr;
+//     }
+//   }
+// }

@@ -2,6 +2,7 @@ $size: 50px;
 
 .float-button-item {
   position: relative;
+  cursor: pointer;
 
   .description {
     position: absolute;
@@ -12,9 +13,10 @@ $size: 50px;
     border-bottom-left-radius: $size * 2;
     border-top-left-radius: $size * 2;
     z-index: 20;
-    transition: width 0.5s ease-out;
+    transition: width .5s ease-out;
     padding: 0;
     color: $colorPrimary;
+    overflow: hidden;
   }
 
   .open {

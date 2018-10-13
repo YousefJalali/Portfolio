@@ -1,21 +1,23 @@
 .about {
   background-color: $colorTertiary;
   color: $colorPrimaryLight;
-  padding: 2rem 5rem;
-  width: 100vw;
-  max-width: 1500px;
   transition: all 0.5s ease-out;
 
   .performance--container {
     margin-bottom: 10rem;
+
     .performance {
       width: 50%;
       font-size: 2rem;
-      .square {
-        height: 10rem;
-        width: 10rem;
+
+      .text {
+        padding: 0 2rem;
       }
     }
+
+    // .performance__active {
+    //   background-color: 
+    // }
   }
 
   .profile {
@@ -24,6 +26,7 @@
     .octagon {
       height: 25rem;
       width: 25rem;
+      margin-bottom: 3rem;
     }
   }
   .skills {

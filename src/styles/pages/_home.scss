@@ -1,5 +1,6 @@
 .home {
   height: 100vh;
+  width: 100vw;
   background-image: url('../assets/background.png');
   background-color: $colorPrimary;
   background-position: center;
@@ -7,5 +8,14 @@
   background-attachment: fixed;
   color: $colorPrimary;
   text-align: left;
-  padding-left: 3rem
+  // padding-left: 5rem;
+  box-sizing: border-box;
+
+  .name {
+    margin-left: 5rem;
+
+    h1, h2 {
+      margin: 0;
+    }
+  }
 }

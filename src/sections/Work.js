@@ -1,45 +1,43 @@
 import React, { Component } from "react";
 
-import UnderLine from "../components/UnderLine";
+import Header from '../components/Header';
 import Card from "../components/Card";
 import Image from "../assets/card-image.jpg";
+import AppStore from "../assets/appStore.png";
+import PlayStore from "../assets/playStore.png";
 import { ICONS } from "../assets/ICONS";
+
+import Zoom from "react-reveal/Zoom";
 
 class Work extends Component {
   render() {
     return (
-      <section className="work section flex content-flex-start">
-        <div>
-          <h1 className="header">Work</h1>
-          <UnderLine marginBottom="15rem" />
-        </div>
-        <div className="card--container flex row content-space-evenly items-flex-start">
-          <Card
-            image={Image}
-            title="Terre d'Ocean"
-            description="A website for a place"
-            icon={ICONS.home}
-            link="www.google.com"
-            linkLabel="google"
-          />
-          <Card
-            image={Image}
-            title="Native App"
-            description="is a challenge I made for myself to learn skills in iOS, Android, game and web development as well as design. (In Progress)"
-            hasSecondLink="true"
-            icon={ICONS.googlePlay}
-            link="www.google.com"
-            linkLabel="google Play"
-          />
-          <Card
-            image={Image}
-            title="Portfolio"
-            description="App built using react native"
-            icon={ICONS.home}
-            link="www.google.com"
-            linkLabel="google"
-          />
-        </div>
+      <section className="work section flex content-flex-start" id="work">
+        <Header title="Work"/>
+        <Zoom>
+          <div className="card--container flex row content-space-evenly items-flex-start">
+            <Card
+              image={Image}
+              title="Native App"
+              description="Is a challenge I made for myself to learn skills in iOS, Android, game and web development as well as design. (In Progress)"
+              hasImage="true"
+              linkImg={AppStore}
+              link="www.google.com"
+              hasSecondImg="true"
+              linkImg2={PlayStore}
+              link2="www.apple.com"
+            />
+            <Card
+              image={Image}
+              title="Portfolio"
+              description="Where I show my projects, contact information, and social links."
+              hasIcon="true"
+              icon={ICONS.website}
+              link="www.google.com"
+              linkLabel="website"
+            />
+          </div>
+        </Zoom>
       </section>
     );
   }

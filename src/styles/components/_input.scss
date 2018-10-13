@@ -1,0 +1,53 @@
+.input {
+  width: 30vw;
+  height: 3rem;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  background-color: $colorPrimaryLight;
+  color: $colorTertiaryDark;
+  border: 1px solid $colorPrimaryLight;
+  margin-bottom: 1rem;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+textarea {
+  resize: none;
+  height: 20rem !important;
+}
+
+.invalid {
+  border: 2px solid rgba(255, 0, 0, 0.5);
+}
+
+@include respond-to("extraSmall") {
+  .input {
+    width: 80vw;
+  }
+}
+
+@include respond-to("small") {
+  .input {
+    width: 80vw;
+  }
+}
+
+@include respond-to("medium") {
+  .input {
+    width: 80vw;
+  }
+}
+
+@include respond-to("large") {
+  .input {
+    width: 50vw;
+  }
+}
+
+@include respond-to("extraLarge") {
+  .input {
+    width: 4f0vw;
+  }
+}

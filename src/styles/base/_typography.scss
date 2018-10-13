@@ -43,7 +43,7 @@
 
 .sub-title {
   font-family: "Raleway", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   @extend .normal;
 }
 
@@ -61,55 +61,37 @@
 
 .button--text {
   font-family: "Raleway", sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  letter-spacing: .2rem;
+  @extend .lighter;
 }
 
 @include respond-to("extraSmall") {
   html {
     font-size: 6px;
-
-    .button--text {
-      font-size: 3rem;
-    }
   }
 }
 
 @include respond-to("small") {
   html {
     font-size: 7px;
-
-    .button--text {
-      font-size: 3rem;
-    }
   }
 }
 
 @include respond-to("medium") {
   html {
     font-size: 8px;
-
-    .button--text {
-      font-size: 3rem;
-    }
   }
 }
 
 @include respond-to("large") {
   html {
     font-size: 9px;
-
-    .button--text {
-      font-size: 2rem;
-    }
   }
 }
 
 @include respond-to("extraLarge") {
   html {
     font-size: 10px;
-
-    .button--text {
-      font-size: 2rem;
-    }
   }
 }
